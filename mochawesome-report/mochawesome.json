@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-11T15:00:01.165Z",
+    "end": "2020-06-11T15:00:12.392Z",
+    "duration": 11227,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f2b42150-5a6b-4966-91a1-5b917606cc76",
+      "title": "",
+      "fullFile": "cypress/integration/registrationTest.js",
+      "file": "cypress/integration/registrationTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "946ccaa8-affe-4297-8861-7f8043c116ca",
+          "title": "Sign up Test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "check that user can register successfully using a unique email and valid password",
+              "fullTitle": "Sign up Test suite check that user can register successfully using a unique email and valid password",
+              "timedOut": null,
+              "duration": 11191,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "registrationPage.visit();\nregistrationPage.addFirstName(testData.firstname);\nregistrationPage.addLastName(testData.lastname);\nregistrationPage.addMobileNumber(testData.mobile);\nregistrationPage.addUniqueEmail(email);\nregistrationPage.addPassword(testData.password);\nregistrationPage.addConfirmPassword(testData.confirmPassword);\ncy.server();\ncy.route('POST', '/account/signup').as('signUp');\nregistrationPage.clickSignUp(); //function to intercept the sign up request and save both request and the response in two JSON files\ncy.wait('@signUp').then(function () {\n  helpers.interceptRequest('@signUp');\n  helpers.interceptResponse('@signUp');\n});",
+              "err": {},
+              "uuid": "d54c07d4-4775-4fe7-b443-e613fe43e094",
+              "parentUUID": "946ccaa8-affe-4297-8861-7f8043c116ca",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d54c07d4-4775-4fe7-b443-e613fe43e094"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11191,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {},
+      "version": "5.1.0"
+    }
+  }
+}

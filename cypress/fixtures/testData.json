@@ -1,0 +1,7 @@
+{
+    "firstname": "John",
+    "lastname": "Smith",
+    "mobile": "01012345678",
+    "password": "Password",
+    "confirmPassword": "Password"
+  }

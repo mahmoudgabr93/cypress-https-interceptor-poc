@@ -1,0 +1,10 @@
+{
+  "baseUrl": "https://www.phptravels.net",
+  "viewportWidth": 1000,
+  "viewportHeight": 1000,
+  "chromeWebSecurity": false,
+  "screenshotOnRunFailure": true,
+  "video": false,
+  "reporter": "mochawesome",
+  "pageLoadTimeout": 12000
+}

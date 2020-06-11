@@ -1,0 +1,24 @@
+{
+  "name": "pixelogic-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint-fix": "npm run lint -- --fix",
+    "test": "cypress run --headed",
+    "cypress": "cypress open --project"
+  },
+  "author": "Mahmoud Gabr",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.7.0",
+    "eslint": "^7.2.0",
+    "faker": "^4.1.0",
+    "mocha": "^7.2.0",
+    "mocha-multi-reporters": "^1.1.7",
+    "mochawesome": "^6.1.1",
+    "mochawesome-merge": "^4.1.0",
+    "mochawesome-report-generator": "^5.1.0"
+  }
+}

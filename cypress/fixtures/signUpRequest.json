@@ -1,0 +1,8 @@
+{
+  "headers": {
+    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+    "Accept": "*/*",
+    "X-Requested-With": "XMLHttpRequest"
+  },
+  "body": "firstname=John&lastname=Smith&phone=01012345678&email=Maegan.Keebler31%40example.com&password=Password&confirmpassword=Password"
+}
